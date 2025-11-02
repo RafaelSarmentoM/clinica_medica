@@ -1,0 +1,292 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'PES_FS.ui'
+##
+## Created by: Qt User Interface Compiler version 6.9.1
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+####CODIGO FEITO PELO QT Designer(uiPES_FS.py) #############
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QLabel,
+    QLineEdit, QPushButton, QSizePolicy, QStackedWidget,
+    QVBoxLayout, QWidget)
+
+class Ui_Login(object):
+    def setupUi(self, Login):
+        if not Login.objectName():
+            Login.setObjectName(u"Login")
+        Login.resize(895, 719)
+        self.stackedWidget = QStackedWidget(Login)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setGeometry(QRect(20, 20, 861, 661))
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.frame = QFrame(self.page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setGeometry(QRect(290, 220, 261, 261))
+        self.frame.setStyleSheet(u"\n"
+"background-color: rgb(200, 200, 200);\n"
+"\n"
+"border-radius:18px\n"
+"")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout = QVBoxLayout(self.frame)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.comboBox_User = QComboBox(self.frame)
+        self.comboBox_User.addItem("")
+        self.comboBox_User.addItem("")
+        self.comboBox_User.addItem("")
+        self.comboBox_User.setObjectName(u"comboBox_User")
+        self.comboBox_User.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:0px")
+
+        self.verticalLayout.addWidget(self.comboBox_User)
+
+        self.lineEdit_User = QLineEdit(self.frame)
+        self.lineEdit_User.setObjectName(u"lineEdit_User")
+        font = QFont()
+        font.setPointSize(11)
+        self.lineEdit_User.setFont(font)
+        self.lineEdit_User.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+
+        self.verticalLayout.addWidget(self.lineEdit_User)
+
+        self.lineEdit_senha = QLineEdit(self.frame)
+        self.lineEdit_senha.setObjectName(u"lineEdit_senha")
+        self.lineEdit_senha.setFont(font)
+        self.lineEdit_senha.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+        self.lineEdit_senha.setEchoMode(QLineEdit.EchoMode.Password)
+
+        self.verticalLayout.addWidget(self.lineEdit_senha)
+
+        self.lineEdit_CRM = QLineEdit(self.frame)
+        self.lineEdit_CRM.setObjectName(u"lineEdit_CRM")
+        self.lineEdit_CRM.setEnabled(False)
+        self.lineEdit_CRM.setFont(font)
+        self.lineEdit_CRM.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+        self.lineEdit_CRM.setFrame(False)
+        self.lineEdit_CRM.setDragEnabled(False)
+
+        self.verticalLayout.addWidget(self.lineEdit_CRM)
+
+        self.pushButton_Login = QPushButton(self.frame)
+        self.pushButton_Login.setObjectName(u"pushButton_Login")
+        self.pushButton_Login.setFont(font)
+        self.pushButton_Login.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_Login.setAutoFillBackground(False)
+        self.pushButton_Login.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"background-color: rgb(115, 115, 115);\n"
+"	\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius:10px\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(0, 255, 127);\n"
+"}")
+
+        self.verticalLayout.addWidget(self.pushButton_Login)
+
+        self.pushButton_Cadastro = QPushButton(self.frame)
+        self.pushButton_Cadastro.setObjectName(u"pushButton_Cadastro")
+        self.pushButton_Cadastro.setFont(font)
+        self.pushButton_Cadastro.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_Cadastro.setAutoFillBackground(False)
+        self.pushButton_Cadastro.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"background-color: rgb(115, 115, 115);\n"
+"	\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius:10px\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(0, 255, 127);\n"
+"}")
+### Segunda tela de login inacessivel para fazer cadastro(precisa de mudanças)####
+        self.verticalLayout.addWidget(self.pushButton_Cadastro)
+
+        self.label = QLabel(self.page)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(0, 0, 861, 671))
+        self.label.setPixmap(QPixmap(u"Captura de tela 2025-10-30 203105.png"))
+        self.label.setScaledContents(True)
+        self.stackedWidget.addWidget(self.page)
+        self.label.raise_()
+        self.frame.raise_()
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.label_2 = QLabel(self.page_2)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(0, 0, 861, 671))
+        self.label_2.setPixmap(QPixmap(u"../../Imagens/Screenshots/Captura de tela 2025-10-30 203105.png"))
+        self.label_2.setScaledContents(True)
+        self.frame_2 = QFrame(self.page_2)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setGeometry(QRect(300, 200, 261, 261))
+        self.frame_2.setStyleSheet(u"\n"
+"background-color: rgb(200, 200, 200);\n"
+"\n"
+"border-radius:18px\n"
+"")
+        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.comboBox = QComboBox(self.frame_2)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);")
+
+        self.verticalLayout_2.addWidget(self.comboBox)
+
+        self.lineEdit_User_2 = QLineEdit(self.frame_2)
+        self.lineEdit_User_2.setObjectName(u"lineEdit_User_2")
+        self.lineEdit_User_2.setFont(font)
+        self.lineEdit_User_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+
+        self.verticalLayout_2.addWidget(self.lineEdit_User_2)
+
+        self.lineEdit_senha_2 = QLineEdit(self.frame_2)
+        self.lineEdit_senha_2.setObjectName(u"lineEdit_senha_2")
+        self.lineEdit_senha_2.setFont(font)
+        self.lineEdit_senha_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+        self.lineEdit_senha_2.setEchoMode(QLineEdit.EchoMode.Password)
+
+        self.verticalLayout_2.addWidget(self.lineEdit_senha_2)
+
+        self.lineEdit_CRM_2 = QLineEdit(self.frame_2)
+        self.lineEdit_CRM_2.setObjectName(u"lineEdit_CRM_2")
+        self.lineEdit_CRM_2.setEnabled(True)
+        self.lineEdit_CRM_2.setFont(font)
+        self.lineEdit_CRM_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"color: rgb(100, 100, 100);\n"
+"border-radius:10px")
+        self.lineEdit_CRM_2.setFrame(False)
+        self.lineEdit_CRM_2.setDragEnabled(True)
+
+        self.verticalLayout_2.addWidget(self.lineEdit_CRM_2)
+
+        self.pushButton_Login_2 = QPushButton(self.frame_2)
+        self.pushButton_Login_2.setObjectName(u"pushButton_Login_2")
+        self.pushButton_Login_2.setFont(font)
+        self.pushButton_Login_2.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_Login_2.setAutoFillBackground(False)
+        self.pushButton_Login_2.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"background-color: rgb(115, 115, 115);\n"
+"	\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius:10px\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(0, 255, 127);\n"
+"}")
+
+        self.verticalLayout_2.addWidget(self.pushButton_Login_2)
+
+        self.pushButton_Cadastro_2 = QPushButton(self.frame_2)
+        self.pushButton_Cadastro_2.setObjectName(u"pushButton_Cadastro_2")
+        self.pushButton_Cadastro_2.setFont(font)
+        self.pushButton_Cadastro_2.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.pushButton_Cadastro_2.setAutoFillBackground(False)
+        self.pushButton_Cadastro_2.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"background-color: rgb(115, 115, 115);\n"
+"	\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius:10px\n"
+"\n"
+"}\n"
+"QPushButton:hover{\n"
+"	background-color: rgb(0, 255, 127);\n"
+"}")
+
+        self.verticalLayout_2.addWidget(self.pushButton_Cadastro_2)
+
+        self.stackedWidget.addWidget(self.page_2)
+
+        self.retranslateUi(Login)
+
+        self.stackedWidget.setCurrentIndex(0)
+
+
+        QMetaObject.connectSlotsByName(Login)
+    # setupUi
+
+    def retranslateUi(self, Login):
+        Login.setWindowTitle(QCoreApplication.translate("Login", u"Form", None))
+        self.comboBox_User.setItemText(0, QCoreApplication.translate("Login", u"Paciente", None))
+        self.comboBox_User.setItemText(1, QCoreApplication.translate("Login", u"Admin", None))
+        self.comboBox_User.setItemText(2, QCoreApplication.translate("Login", u"Doutor", None))
+
+        self.lineEdit_User.setText("")
+        self.lineEdit_User.setPlaceholderText(QCoreApplication.translate("Login", u"Usu\u00e1rio", None))
+        self.lineEdit_senha.setPlaceholderText(QCoreApplication.translate("Login", u"Senha", None))
+        self.lineEdit_CRM.setPlaceholderText(QCoreApplication.translate("Login", u"CRM", None))
+        self.pushButton_Login.setText(QCoreApplication.translate("Login", u"Login", None))
+        self.pushButton_Cadastro.setText(QCoreApplication.translate("Login", u"Cadastro", None))
+        self.label.setText("")
+        self.label_2.setText("")
+        self.comboBox.setItemText(0, QCoreApplication.translate("Login", u"Paciente", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("Login", u"Admin", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("Login", u"Doutor", None))
+
+        self.lineEdit_User_2.setText("")
+        self.lineEdit_User_2.setPlaceholderText(QCoreApplication.translate("Login", u"Usu\u00e1rio", None))
+        self.lineEdit_senha_2.setPlaceholderText(QCoreApplication.translate("Login", u"Senha", None))
+        self.lineEdit_CRM_2.setPlaceholderText(QCoreApplication.translate("Login", u"CRM", None))
+        self.pushButton_Login_2.setText(QCoreApplication.translate("Login", u"Login", None))
+        self.pushButton_Cadastro_2.setText(QCoreApplication.translate("Login", u"Cadastro", None))
+    # retranslateUi
+
+####### INICIALIZAÇAO EM ARUIVO SEPARADO(Main.py)
+
+
+from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget)
+from uiPES_FS import Ui_Login
+import sys
+
+class Login(QWidget, Ui_Login):
+    def __init__(self) -> None:
+        super(Login, self).__init__()
+        self.setupUi(self)
+        self.setWindowTitle("Tela de Login")
+
+
+
+#class MainWindow(QMainWindow, Ui_MainWindow)
+
+
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    tela = Login()
+    tela.show()
+    app.exec_()
